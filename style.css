@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
+  background: gray;
+}
+
+.bg {
+  display: grid;
+  grid-template-columns: repeat(var(--x), 1fr);
+  grid-template-rows: repeat(var(--y), 1fr);
+}
+
+.bg-el {
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  background-color: gray;
+  background-size: cover !important;
+  image-rendering: pixelated;
+}
